@@ -11,11 +11,13 @@ function App() {
     <>
       <Router>
         <Header />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/random" element={<RandomPokémonGenerator />} />
-          <Route exact path="/pokemon/:id" element={<PokePage />} />
+        <BrowswerRouter basename="React-Pok-dex" >
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/random" element={<RandomPokémonGenerator />} />
+            <Route exact path="/pokemon/:id" element={<PokePage />} />
         </Routes>
+      </BrowserRouter>
         <Footer />
       </Router>
     </>
