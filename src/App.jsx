@@ -10,15 +10,17 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
         <BrowswerRouter basename="React-Pok-dex" >
+        <Header />
+        
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/random" element={<RandomPokémonGenerator />} />
             <Route exact path="/pokemon/:id" element={<PokePage />} />
         </Routes>
-      </BrowserRouter>
+      
         <Footer />
+          </BrowserRouter>
       </Router>
     </>
   );
