@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Router>
-        <BrowswerRouter basename="React-Pok-dex" >
+        <BrowswerRouter basename={import.meta.env.BASE_URL} >
         <Header />
         
           <Routes>
