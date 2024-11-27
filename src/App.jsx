@@ -11,14 +11,12 @@ function App() {
     <>
       <Router>
         <BrowswerRouter basename={import.meta.env.BASE_URL} >
-        <Header />
-        
+        <Header />        
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/random" element={<RandomPokémonGenerator />} />
             <Route exact path="/pokemon/:id" element={<PokePage />} />
         </Routes>
-      
         <Footer />
           </BrowserRouter>
       </Router>
